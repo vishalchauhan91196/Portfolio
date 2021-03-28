@@ -1,0 +1,45 @@
+.primary {
+  background-color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  color: #fff;
+  margin: 1.5rem;
+}
+
+.secondary {
+  padding: 0.5rem;
+  background-color: transparent;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+h4 {
+  text-align: start;
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 0;
+}
+
+small {
+  color: var(--dark-gray);
+  padding-left: 1.5rem;
+}
+
+section div {
+  max-width: 60%;
+  height: 13rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: var(--primary-lighter);
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  box-shadow: 3px 3px rgba(105, 209, 250, 0.3);
+}
+
+.text {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.projects {
+  margin: 2rem;
+}
