@@ -11,72 +11,94 @@
     <nav>
       <ul class="nav__items">
         <li class="item"><a href="/" class="link active">Home</a></li>
-        <li class="item"><a href="/projects.html" class="link">Projects</a></li>
-        <li class="item"><a href="/blogs.html" class="link">Blogs</a></li>
+        <li class="item">
+          <a href="/src/projects.html" class="link">Projects</a>
+        </li>
+        <li class="item"><a href="/src/blogs.html" class="link">Blogs</a></li>
       </ul>
     </nav>
 
     <header>
       <h2>WELCOME TO MY <span>PORTFOLIO</span></h2>
-      <img src="./images/img1.svg" alt="header image" class="image" />
+      <img src="./images/header.svg" alt="header image" class="image" />
     </header>
 
     <hr />
 
-    <section class="off-white">
-      <div class="card">
-        <h3>Technologies</h3>
-        <p class="text">
-          I have experience working with HTML5, CSS3, GitHub, Javascript,
-          NodeJS, ReactJs and Web Hosting.
-        </p>
+    <section class="portfolio__details">
+      <div class="bg__video">
+        <video
+          src="./images/bg-video.mp4"
+          class="bg__video-content"
+          autoplay
+          mute
+          loop
+        ></video>
       </div>
 
-      <div class="card">
-        <h3>Projects</h3>
+      <div class="technologies off-white">
+        <p class="heading__typography">Technologies</p>
+        <ul class="icon__list">
+          <li><img src="./images/html.svg" alt="html" class="icon" /></li>
+          <li><img src="./images/css.png" alt="css" class="icon" /></li>
+          <li><img src="./images/js.svg" alt="js" class="icon" /></li>
+          <li><img src="./images/nodejs.png" alt="nodejs" class="icon" /></li>
+          <li><img src="./images/react.svg" alt="react" class="icon" /></li>
+          <li><img src="./images/hosting.png" alt="hosting" class="icon" /></li>
+        </ul>
+      </div>
+
+      <div class="projects">
+        <p class="heading__typography">Projects</p>
         <p class="text">
           I have developed some projects that are hosted online. Click on the
           button below to view all the projects.
         </p>
 
-        <a href="/projects.html" class="b_link">See Projects</a>
+        <a href="/src/projects.html" class="b_link">See Projects</a>
       </div>
 
-      <div class="card">
-        <h3>Blogs</h3>
+      <div class="blogs off-white">
+        <p class="heading__typography">Blogs</p>
         <p class="text">
           I am also currently working upon writing some technical and
           non-technical blogs. Do visit them to learn more.
         </p>
 
-        <a href="/blogs.html" class="b_link">Read Blogs</a>
+        <a href="/src/blogs.html" class="b_link">Read Blogs</a>
       </div>
     </section>
 
     <footer>
-      <h4><span> Social Media</span>Presence</h4>
+      <p class="heading heading__typography">Social Media Presence</p>
       <ul class="footer__items">
         <li class="item">
           <a
             class="link"
             href="https://www.linkedin.com/in/vishal-chauhan-091196/"
             target="_blank"
-            >Linkedin</a
           >
+            <img src="./images/linkedin.svg" alt="linkedin" />
+          </a>
         </li>
         <li class="item">
           <a
             class="link"
             href="https://github.com/vishalchauhan91196/"
             target="_blank"
-            >Github</a
           >
+            <img src="./images/github.svg" alt="linkedin" />
+          </a>
         </li>
         <li class="item">
-          <a class="link" href="/" target="_blank">Twitter</a>
+          <a class="link" href="/" target="_blank">
+            <img src="./images/twitter.svg" alt="linkedin" />
+          </a>
         </li>
         <li class="item">
-          <a class="link" href="/" target="_blank">Instagram</a>
+          <a class="link" href="/" target="_blank">
+            <img src="./images/insta.svg" alt="linkedin" />
+          </a>
         </li>
       </ul>
     </footer>

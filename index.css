@@ -9,6 +9,7 @@
   --secondary-color: #22d3ee;
   --primary-light: #a5f3fc;
   --primary-lighter: #ecfeff;
+  --darker-gray: #6b7280;
   --dark-gray: #94a3b8;
   --light-gray: #f1f5f9;
 }
@@ -56,8 +57,17 @@ nav {
 
 /* HEADINGS */
 h2 {
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    var(--primary-light),
+    var(--secondary-color)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
   font-size: 4rem;
-  color: var(--secondary-color);
   padding-left: 2rem;
   line-height: 7rem;
   text-align: center;
@@ -65,15 +75,26 @@ h2 {
   letter-spacing: 5px;
 }
 
-h3 {
-  font-size: 1.5rem;
-  background-color: var(--primary-light);
-  color: var(--secondary-color);
+.heading {
+  display: block;
+  background-image: linear-gradient(
+    to right,
+    var(--secondary-color),
+    var(--primary-color),
+    var(--primary-light)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.heading__typography {
   text-align: center;
-  font-weight: 400;
-  margin: 0;
-  padding: 1rem;
-  border-bottom: 1px solid var(--secondary-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: 0.5rem;
 }
 
 h4 {
@@ -122,39 +143,73 @@ img {
 }
 
 /* SECTION */
-.off-white {
-  display: flex;
-  justify-content: space-evenly;
-
-  margin: 5rem;
+.portfolio__details {
+  position: relative;
 }
 
-.card {
-  max-width: 25%;
-  height: 30rem;
-  border: 2px solid var(--primary-color);
-  border-radius: 5px;
+.bg__video {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+  object-fit: fit;
+}
+
+.bg__video-content {
+  opacity: 0.1;
+  object-fit: fill;
+}
+
+.off-white {
   background-color: var(--primary-lighter);
-  text-align: center;
-  box-shadow: 5px 5px rgba(105, 209, 250, 0.4);
+  opacity: 0.8;
+}
+
+.icon__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.technologies,
+.projects,
+.blogs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  color: var(--darker-gray);
 }
 
 .text {
   color: var(--secondary-color);
   text-align: justify;
   line-height: 2rem;
-  padding: 2rem;
   font-size: 1.2rem;
-  margin-bottom: 3rem;
+  margin: 0;
+  margin-bottom: 1.5rem;
 }
 
 .b_link {
   text-decoration: none;
+  width: 25%;
+  margin: 0 auto;
   border-radius: 5px;
   font-size: 1.1rem;
   text-align: center;
-  padding: 0.3rem;
-  background-color: transparent;
+  padding: 0.5rem;
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
   box-shadow: 2px 2px rgba(105, 209, 250, 0.5);
